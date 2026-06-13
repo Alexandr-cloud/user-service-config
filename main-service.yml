@@ -15,23 +15,6 @@ spring:
     properties:
       hibernate:
         format_sql: true
-  kafka:
-    bootstrap-servers: localhost:9092
-    producer:
-      key-serializer: org.apache.kafka.common.serialization.StringSerializer
-      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
-      properties:
-        acks: 1
-        retries: 3
-        request:
-          timeout:
-            ms: 10000
-        delivery:
-          timeout:
-            ms: 12000
-        max:
-          block:
-            ms: 5000
 
 springdoc:
   api-docs:
