@@ -9,12 +9,15 @@ spring:
     username: postgres
     password: mysecretpassword
   jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
     hibernate:
       ddl-auto: update
     show-sql: true
     properties:
       hibernate:
         format_sql: true
+  kafka:
+    bootstrap-servers: kafka:9092
 
 springdoc:
   api-docs:
