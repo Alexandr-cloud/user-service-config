@@ -13,6 +13,8 @@ spring:
           auth: false
           starttls:
             enable: false
+  kafka:
+    bootstrap-servers: kafka:9092
 
 eureka:
   client:
